@@ -17,3 +17,11 @@ Arduino Power Management Library for nRF5x
     * pin is the nRF5x Pin
     * mode can be any of the following (HIGH, RISING, LOW, FALLING)
   * ```nRF5x_lowPower.disableWakeupByInterrupt(uint32_t pin);``` to disable the Sense Interrupt
+  
+## Dependencies
+
+This library depends on the Arduino nRF5 package (https://github.com/sandeepmistry/arduino-nRF5)
+
+## Compatibility
+
+This library should be compatible with all boards supported by the Arduino-nRF5
