@@ -2,13 +2,14 @@
 /*!
     @file		Arduino_nRF5x_lowPower.cpp
 	@author		Marc-Oliver Ristau <marc.ristau@mristau.eu>
-	@version	0.1.0
+	@version	0.1.1
 	
 	Arduino library for nRF5x lowPower modes
 	
 	@section HISTORY
 	
 	v0.1.0	- First Release
+    v0.1.1  - updated comments
 */
 /**************************************************************************/
 
@@ -41,7 +42,7 @@ void Arduino_nRF5x_lowPower::powerMode(nRF5x_powermodes_t mode) {
 
 /**************************************************************************/
 /*!
-    @brief Sends nRF5x to desired powermode
+    @brief enables the builtin DCDC Converter
 */
 /**************************************************************************/
 void Arduino_nRF5x_lowPower::enableDCDC() {
@@ -55,7 +56,7 @@ void Arduino_nRF5x_lowPower::enableDCDC() {
 
 /**************************************************************************/
 /*!
-    @brief Sends nRF5x to desired powermode
+    @brief disables the builtin DCDC Converter
 */
 /**************************************************************************/
 void Arduino_nRF5x_lowPower::disableDCDC() {
@@ -69,7 +70,7 @@ void Arduino_nRF5x_lowPower::disableDCDC() {
 
 /**************************************************************************/
 /*!
-    @brief Sends nRF5x to desired powermode
+    @brief enable Sense mode on selected pin, so it can wake the nRF5x from power off
 */
 /**************************************************************************/
 void Arduino_nRF5x_lowPower::enableWakeupByInterrupt(uint32_t pin, uint32_t mode) {
@@ -90,7 +91,7 @@ void Arduino_nRF5x_lowPower::enableWakeupByInterrupt(uint32_t pin, uint32_t mode
 
 /**************************************************************************/
 /*!
-    @brief Sends nRF5x to desired powermode
+    @brief disable Sense mode on selected pin
 */
 /**************************************************************************/
 void Arduino_nRF5x_lowPower::disableWakeupByInterrupt(uint32_t pin) {
@@ -100,7 +101,7 @@ void Arduino_nRF5x_lowPower::disableWakeupByInterrupt(uint32_t pin) {
 
 /**************************************************************************/
 /*!
-    @brief Sends nRF5x to desired powermode
+    @brief Sends nRF5x to power off mode
 */
 /**************************************************************************/
 void Arduino_nRF5x_lowPower::powerOff(void) {
@@ -115,7 +116,7 @@ void Arduino_nRF5x_lowPower::powerOff(void) {
 
 /**************************************************************************/
 /*!
-    @brief Sends nRF5x to desired powermode
+    @brief Sends nRF5x to constant latency mode
 */
 /**************************************************************************/
 void Arduino_nRF5x_lowPower::constLat(void) {
@@ -131,7 +132,7 @@ void Arduino_nRF5x_lowPower::constLat(void) {
 
 /**************************************************************************/
 /*!
-    @brief Sends nRF5x to desired powermode
+    @brief Sends nRF5x to low power mode
 */
 /**************************************************************************/
 void Arduino_nRF5x_lowPower::lowPower(void) {
@@ -147,7 +148,8 @@ void Arduino_nRF5x_lowPower::lowPower(void) {
 
 /**************************************************************************/
 /*!
-    @brief Sends nRF5x to desired powermode
+    @brief Checks if a softdevice is present
+    @return 1=softdevice, 0=no softdevice
 */
 /**************************************************************************/
 uint8_t Arduino_nRF5x_lowPower::checkForSoftDevice(void) {
