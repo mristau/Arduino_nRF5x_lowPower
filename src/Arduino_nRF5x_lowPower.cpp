@@ -1,7 +1,7 @@
 /**************************************************************************/
 /*!
     @file       Arduino_nRF5x_lowPower.cpp
-    @author	    Marc-Oliver Ristau <marc.ristau@mristau.eu>
+    @author     Marc-Oliver Ristau <marc.ristau@mristau.eu>
     @version    0.1.1
 	
     Arduino library for nRF5x lowPower modes
