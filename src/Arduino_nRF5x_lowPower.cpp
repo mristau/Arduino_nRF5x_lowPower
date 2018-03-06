@@ -26,15 +26,12 @@
 void Arduino_nRF5x_lowPower::powerMode(nRF5x_powermodes_t mode) {
     switch(mode) {
         case POWER_MODE_OFF:
-            Serial.println("Power OFF");
             powerOff();
             break;
         case POWER_MODE_LOW_POWER:
-            Serial.println("Low Power");
             lowPower();
             break;
         case POWER_MODE_CONSTANT_LATENCY:
-            Serial.println("Constant Latency");
             constLat();
             break;
     }
